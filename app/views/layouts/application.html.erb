@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -57,14 +58,13 @@
         <% end %>
           </ul>
         </div>
-      <div>
     </nav>
   </header>
   <main>
   <% if flash[:notice] %>
-     <p id="notice">
-       <%= flash[:notice] %>
-     </p>
+    <p id="notice">
+      <%= flash[:notice] %>
+    </p>
    <% end %>
   <%= yield %>
   </main>
